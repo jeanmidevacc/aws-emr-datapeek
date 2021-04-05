@@ -1,0 +1,23 @@
+[
+  {
+    "Classification": "spark-hive-site",
+    "Properties": {
+      "hive.metastore.client.factory.class": "com.amazonaws.glue.catalog.metastore.AWSGlueDataCatalogHiveClientFactory"
+      }
+  },
+  {
+    "Classification": "core-site",
+    "Properties": {
+      "hadoop.proxyuser.livy.groups": "*",
+      "hadoop.proxyuser.livy.hosts": "*"
+    }
+  },
+  {
+    "Classification": "livy-conf",
+    "Properties": {
+      "livy.impersonation.enabled": "true",
+      "livy.server.session.timeout":"5h"
+    }
+  }
+]
+                          
